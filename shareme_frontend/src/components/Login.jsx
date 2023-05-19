@@ -16,10 +16,10 @@ const Login = () => {
     console.log(decoded);
 
     
-    const { jti, name, picture} = decoded;
+    const { sub, name, picture} = decoded;
 
     const doc = {
-      _id: jti,
+      _id: sub,
       _type: 'user',
       userName: name,
       image: picture
