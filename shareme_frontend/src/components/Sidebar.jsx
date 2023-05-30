@@ -10,7 +10,7 @@ const isNotActiveStyle = "flex items-center px-5 py-2 gap-3 text-gray-500 hover:
 const isActiveStyle = "flex items-center gap-3 px-5 py-2 font-extrabold border-r-2 border-black transition-all duration-200 ease-in-out capitalize";
 
 
-const Sidebar = ({ user={"userName": "Pranaav"}, closeToggle }) => {
+const Sidebar = ({ user, closeToggle }) => {
 
     const handleCloseSidebar = () => {
         if (closeToggle) closeToggle(false);
