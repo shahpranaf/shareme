@@ -6,7 +6,6 @@ import { MdDelete } from 'react-icons/md';
 import { categories } from '../utils/data';
 import { client } from '../client';
 import Spinner from './Spinner';
-import { fetchUser } from '../utils/fetchUser';
 
 const CreatePin = ({user}) => {
   const [title, setTitle] = useState('');

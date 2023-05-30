@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Sidebar, UserProfile } from '../components';
 import logo from '../assets/logo.png';
@@ -22,7 +22,6 @@ const Home = () => {
     if (!userInfo?.sub)
       return;
 
-    console.log(userInfo.sub)
     const query = userQuery(userInfo?.sub);
 
     client.fetch(query).then((data) => {
@@ -31,7 +30,7 @@ const Home = () => {
     })
       .catch(err => console.log(err));
 
-  }, []);
+  }, [userInfo?.sub]);
 
   return (
     <div className='flex bg-gray-50 md:flex-row flex-col h-screen transition-height duration-75 ease-out'>
