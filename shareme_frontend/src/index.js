@@ -9,4 +9,4 @@ import './index.css';
 
 const container = document.getElementById('root');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
-root.render(<Router><App /></Router>);
+root.render(<Router basename='/shareme'><App /></Router>);
