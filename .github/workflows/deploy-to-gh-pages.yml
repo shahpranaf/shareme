@@ -17,6 +17,7 @@ jobs:
 
     - name: Build
       run: |
+        cd shareme_frontend
         npm install
         npm run-script build
       env:
