@@ -19,6 +19,7 @@ jobs:
     - name: Build
       run: |
         cd shareme_frontend
+        echo 'REACT_APP_SANITY_PROJECT_ID=${{ secrets.REACT_APP_SANITY_PROJECT_ID }}' >> .env
         npm install
         npm run build
       env:
