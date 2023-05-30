@@ -19,7 +19,6 @@ const Pin = ({ pin }) => {
     console.log(alreadySaved, pin)
 
     const savePin = (id) => {
-        console.log(id)
         if (!alreadySaved) {
             client.patch(id)
                 .setIfMissing({ save: [] })

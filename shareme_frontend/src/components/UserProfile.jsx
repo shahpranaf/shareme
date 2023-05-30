@@ -31,7 +31,6 @@ const UserProfile = () => {
   useEffect(() => {
     if (text === 'Created') {
       const createdPinsQuery = userCreatedPinsQuery(userId);
-      console.log(createdPinsQuery)
 
       client.fetch(createdPinsQuery).then((data) => {
         setPins(data);

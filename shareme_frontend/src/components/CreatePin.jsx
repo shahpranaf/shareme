@@ -19,7 +19,6 @@ const CreatePin = ({user}) => {
   const [wrongImageType, setWrongImageType] = useState(false);
 
   const navigate = useNavigate();
-  console.log(user)
   
   const imgTypeArr = [
     "image/png",

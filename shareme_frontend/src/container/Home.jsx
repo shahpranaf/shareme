@@ -17,7 +17,6 @@ const Home = () => {
   const [user, setUser] = useState()
   const userInfo = fetchUser();
 
-  console.log(userInfo)
   useEffect(() => {
     if (!userInfo?.sub)
       return;
